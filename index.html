@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Simuladores - Ciencia de Materiales</title>
+    <!-- Tailwind CSS para diseño responsivo y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'uv-azul': '#18529D', // Azul institucional UV
+                        'uv-verde': '#88BC38', // Verde institucional UV
+                        'uv-azul-oscuro': '#0F386E',
+                        'uv-verde-oscuro': '#6A9628'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans text-slate-800">
+
+    <!-- Encabezado Institucional -->
+    <header class="bg-uv-azul text-white py-6 px-4 md:px-8 shadow-lg border-b-4 border-uv-verde">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left">
+                <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Recursos Didácticos Interactivos</h1>
+                <p class="text-blue-200 mt-1 text-sm md:text-base font-medium">Ingeniería y Ciencia de Materiales</p>
+            </div>
+            <!-- Decoración sutil -->
+            <div class="hidden md:flex items-center space-x-2 mt-4 md:mt-0">
+                <div class="w-3 h-3 rounded-full bg-uv-verde"></div>
+                <div class="w-3 h-3 rounded-full bg-white opacity-50"></div>
+                <div class="w-3 h-3 rounded-full bg-white opacity-50"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-1 w-full max-w-6xl mx-auto p-4 md:p-8">
+        
+        <div class="mb-8 text-center md:text-left">
+            <h2 class="text-xl font-semibold text-slate-700">Índice de Simuladores y Visores</h2>
+            <p class="text-slate-500 text-sm mt-2">Selecciona un módulo para abrir la herramienta interactiva en pantalla completa.</p>
+        </div>
+
+        <!-- Cuadrícula de Enlaces -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Tarjeta 1 -->
+            <a href="celda_unitaria_3d v4.html" class="bg-white rounded-xl shadow-md border border-slate-200 p-6 flex flex-col h-full card-hover transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 text-uv-azul flex items-center justify-center mb-4 group-hover:bg-uv-azul group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Visualizador 3D</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-1">Estructuras cristalinas SC, BCC, FCC y planos de Miller.</p>
+                <span class="text-uv-verde font-semibold text-sm flex items-center mt-auto">
+                    Abrir simulador <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+
+            <!-- Tarjeta 2 -->
+            <a href="redes de bravais gemini-code-1793991851791.html" class="bg-white rounded-xl shadow-md border border-slate-200 p-6 flex flex-col h-full card-hover transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 text-uv-azul flex items-center justify-center mb-4 group-hover:bg-uv-azul group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Redes de Bravais</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-1">Visor interactivo de las 14 redes de Bravais con parámetros y ángulos.</p>
+                <span class="text-uv-verde font-semibold text-sm flex items-center mt-auto">
+                    Abrir simulador <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+
+            <!-- Tarjeta 3 -->
+            <a href="Celda_hexagonal_v2.html" class="bg-white rounded-xl shadow-md border border-slate-200 p-6 flex flex-col h-full card-hover transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 text-uv-azul flex items-center justify-center mb-4 group-hover:bg-uv-azul group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Celda Hexagonal</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-1">Estructura HCP y planos cristalográficos con índices de Miller-Bravais.</p>
+                <span class="text-uv-verde font-semibold text-sm flex items-center mt-auto">
+                    Abrir simulador <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+
+            <!-- Tarjeta 4 -->
+            <a href="simulador_de_difracci_n.html" class="bg-white rounded-xl shadow-md border border-slate-200 p-6 flex flex-col h-full card-hover transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 text-uv-azul flex items-center justify-center mb-4 group-hover:bg-uv-azul group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Difracción de Ondas</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-1">Simulador de frente de onda múltiple, interferencia y perfil de intensidad 1D.</p>
+                <span class="text-uv-verde font-semibold text-sm flex items-center mt-auto">
+                    Abrir simulador <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+
+            <!-- Tarjeta 5 -->
+            <a href="simulador_xrd_hierro (1).html" class="bg-white rounded-xl shadow-md border border-slate-200 p-6 flex flex-col h-full card-hover transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 text-uv-azul flex items-center justify-center mb-4 group-hover:bg-uv-azul group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Simulador XRD (Hierro)</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-1">Análisis de difracción de Rayos X y patrón de intensidad de las fases del Hierro.</p>
+                <span class="text-uv-verde font-semibold text-sm flex items-center mt-auto">
+                    Abrir simulador <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+
+            <!-- Tarjeta 6 -->
+            <a href="simulador_meb.html" class="bg-white rounded-xl shadow-md border border-slate-200 p-6 flex flex-col h-full card-hover transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 text-uv-azul flex items-center justify-center mb-4 group-hover:bg-uv-azul group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Simulador MEB</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-1">Estudio del volumen de interacción en Microscopía Electrónica de Barrido.</p>
+                <span class="text-uv-verde font-semibold text-sm flex items-center mt-auto">
+                    Abrir simulador <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+
+            <!-- Tarjeta 7 -->
+            <a href="simulador_eutectico.html" class="bg-white rounded-xl shadow-md border border-slate-200 p-6 flex flex-col h-full card-hover transition-all duration-300 group md:col-span-2 lg:col-span-3">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 text-uv-azul flex items-center justify-center mb-4 group-hover:bg-uv-azul group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Aleación Eutéctica</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-1">Evolución microestructural y diagrama de equilibrio de fases con vista de microscopio simulada.</p>
+                <span class="text-uv-verde font-semibold text-sm flex items-center mt-auto">
+                    Abrir simulador <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm border-t-4 border-uv-azul">
+        <p>© Universidad Veracruzana. Herramientas de visualización para ingeniería.</p>
+    </footer>
+
+</body>
+</html>
